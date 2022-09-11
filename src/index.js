@@ -18,17 +18,17 @@ const createNavBar = function() {
     listItem.addEventListener("click", _ => {
       switch (_.target.id) {
         case "Home":
-          page = createHomePage();
+          pageContents = createHomePage();
           break;
         case "Menu":
-          page = createMenuPage();
+          pageContents = createMenuPage();
           break;
         case "Contact":
-          page = createContactPage();
+          pageContents = createContactPage();
           break;
       }
-      content.removeChild(content.lastChild)
-      content.appendChild(page);
+      page.removeChild(page.lastChild)
+      page.appendChild(pageContents);
     })
   }
 
@@ -36,6 +36,9 @@ const createNavBar = function() {
   content.appendChild(navBar);
 }()
 
-let page = createHomePage();
+const page = document.createElement("div");
+page.id = "page";
+let pageContents = createHomePage();
+page.appendChild(pageContents);
 content.appendChild(page);
 
