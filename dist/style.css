@@ -6,10 +6,28 @@ body {
     display: flex;
     justify-content: center;
     background-color: purple;
+    font-family: sans-serif;
 }
 
 body > div {
     flex: 1;
+}
+
+#navbar {
+    width: 100%;
+    background-color: lavender;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+#navbar li {
+    background-color: #b6b6fa;
+    padding: 15px 20px;
+    border-radius: 3px;
 }
 
 #content {
