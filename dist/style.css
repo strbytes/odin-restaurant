@@ -45,7 +45,7 @@ body > div {
     width: 100%;
 }
 
-#home {
+#home, #menu, #contact form {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
