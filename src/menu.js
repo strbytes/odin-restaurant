@@ -26,10 +26,10 @@ function MenuItem(name, desc, price, image) {
 }
 
 const Menu = [
-  MenuItem("Pastrami", "A big ole plate of pastramis", 12, 'pastrami.jpg'),
-  MenuItem("Salami", "A big ole plate of salamis", 13, 'salami.jpg'),
-  MenuItem("Taco Miami", "A big ole plate of taco Miamis", 22, 'tacomiami.jpg'),
-  MenuItem("Beer", "Beer", 5, 'beer.jpg'),
+  MenuItem("Pastrami", "A big plate of pastramis", 12, 'pastrami.jpg'),
+  MenuItem("Salami", "A big plate of salamis", 13, 'salami.jpg'),
+  MenuItem("Taco Miami", "A big plate of taco Miamis", 22, 'tacomiami.jpg'),
+  MenuItem("Beer", "A big bottle of beer", 5, 'beer.jpg'),
 ]
 
 const createMenuPage = function() {

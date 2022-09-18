@@ -5,15 +5,15 @@ const createHomePage = function() {
   page.id = "home";
 
   const name = document.createElement("h1");
-  name.textContent = "Rrrestaurante!!"
+  name.textContent = "Restaurante";
   page.appendChild(name);
 
   const address1 = document.createElement("p");
-  address1.textContent = "100 One Hundred Road";
+  address1.textContent = "100 Real Road";
   page.appendChild(address1);
 
   const address2 = document.createElement("p");
-  address2.textContent = "East Hairsville, GA 10001";
+  address2.textContent = "East City, GA 10001";
   page.appendChild(address2);
   
   const image = new Image();
