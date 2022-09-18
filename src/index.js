@@ -1,6 +1,8 @@
 import createHomePage from './home.js';
 import createMenuPage from './menu.js';
 import createContactPage from './contact.js';
+import './reset.css';
+import './style.css';
 
 const content = document.querySelector("#content");
 
