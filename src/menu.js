@@ -1,3 +1,8 @@
+import burger from './burger.jpeg';
+import hotdog from './hotdog.jpeg';
+import tacos from './tacos.jpeg';
+import beer from './beer.jpeg';
+
 function MenuItem(name, desc, price, image) {
   return {
     "name": name,
@@ -7,15 +12,17 @@ function MenuItem(name, desc, price, image) {
     "makeCard": function() {
       const card = document.createElement("div");
       card.classList.add("card");
+      const text = document.createElement("div");
+      card.appendChild(text);
       const header = document.createElement("h3");
       header.textContent = name;
-      card.appendChild(header);
+      text.appendChild(header);
       const descNode = document.createElement("p");
       descNode.textContent = desc;
-      card.appendChild(descNode);
+      text.appendChild(descNode);
       const priceNode = document.createElement("h4");
       priceNode.textContent = "$" + price;
-      card.appendChild(priceNode);
+      text.appendChild(priceNode);
       const imageNode = new Image();
       imageNode.src = image;
       card.appendChild(imageNode);
@@ -26,10 +33,10 @@ function MenuItem(name, desc, price, image) {
 }
 
 const Menu = [
-  MenuItem("Pastrami", "A big plate of pastramis", 12, 'pastrami.jpg'),
-  MenuItem("Salami", "A big plate of salamis", 13, 'salami.jpg'),
-  MenuItem("Taco Miami", "A big plate of taco Miamis", 22, 'tacomiami.jpg'),
-  MenuItem("Beer", "A big bottle of beer", 5, 'beer.jpg'),
+  MenuItem("Burger", "A big burger", 12, burger),
+  MenuItem("Hot Dog", "A big hot dog", 13, hotdog),
+  MenuItem("Tacos", "A big plate of tacos", 22, tacos),
+  MenuItem("Beer", "A big mug of beer", 5, beer),
 ]
 
 const createMenuPage = function() {
