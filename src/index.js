@@ -38,8 +38,7 @@ const createNavBar = function() {
 
 const page = document.createElement("div");
 page.id = "page";
-// let pageContents = createHomePage();
-let pageContents = createMenuPage();
+let pageContents = createHomePage();
 page.appendChild(pageContents);
 content.appendChild(page);
 
