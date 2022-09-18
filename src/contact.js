@@ -2,8 +2,10 @@ const createContactPage = function() {
   const page = document.createElement("div");
   page.id = "contact";
   
+  const header = document.createElement("h1");
+  header.textContent = "Contact";
+  page.appendChild(header);
   const form = document.createElement("form");
-  // form.method = "post";
   page.appendChild(form);
 
   const nameLabel = document.createElement("label");
